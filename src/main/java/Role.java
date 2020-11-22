@@ -1,5 +1,5 @@
 import java.util.Objects;
-
+import java.util.regex.Pattern;
 
 public class Role {
     private final String name;
@@ -9,7 +9,11 @@ public class Role {
         if (name == "") throw new IllegalArgumentException("Name cannot be empty");
         if (name.trim().equals("")) throw new IllegalArgumentException("Name cannot be blank");
         if (name.indexOf(" ") >= 0) throw new IllegalArgumentException("Name cannot contain spaces");
-        this.name = name;
+
+        String regEx = "[a-zA-Z]{1,10}";
+        if (!Pattern.compile(regEx).matcher(name).matches()) throw new IllegalArgumentException("Only characters are allowed, in a [1-10] length interval");
+
+        this.name = name.toLowerCase();
     }
 
     public String name(){

@@ -12,9 +12,9 @@ public class RoleTermTest extends TestCase {
     }
 
     public void testToPredicate() {
-        Roles roles = new Roles(new Role[]{new Role("e1"),new Role("e2")});
-        RoleTerm termFalse = new RoleTerm(new Role("e3"));
-        RoleTerm termTrue = new RoleTerm(new Role("e1"));
+        Roles roles = new Roles(new Role[]{new Role("eOne"),new Role("eTwo")});
+        RoleTerm termTrue = new RoleTerm(new Role("eTwo"));
+        RoleTerm termFalse = new RoleTerm(new Role("eThree"));
 
         assertTrue(termTrue.toPredicate().test(roles));
         assertFalse(termFalse.toPredicate().test(roles));

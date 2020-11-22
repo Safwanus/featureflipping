@@ -59,14 +59,29 @@ public class RoleTest extends TestCase {
         }
     }
 
+    public void testNameRegEx() {
+        try{
+            Role role = new Role("namenamename");
+            fail();
+        } catch(IllegalArgumentException exception) {
+            assertEquals(exception.getMessage(), "Only characters are allowed, in a [1-10] length interval");
+        }
+        try{
+            Role role = new Role("name1");
+            fail();
+        } catch(IllegalArgumentException exception) {
+            assertEquals(exception.getMessage(), "Only characters are allowed, in a [1-10] length interval");
+        }
+    }
+
     public void testEquals() {
-        Role role1 = new Role("admin");
+        Role role1 = new Role("ADMIN");
         Role role2 = new Role("admin");
         assertEquals(role1, role2);
     }
 
     public void testHashCode() {
-        Role role1 = new Role("admin");
+        Role role1 = new Role("ADMIN");
         Role role2 = new Role("admin");
         assertEquals(role1.hashCode(), role2.hashCode());
     }

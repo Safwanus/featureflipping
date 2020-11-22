@@ -15,7 +15,7 @@ public class RolesTest extends TestCase {
 
     public void testContains() {
         try{
-            Role[] arr = { new Role("name1"), new Role("name2")};
+            Role[] arr = { new Role("nameOne"), new Role("nameTwo")};
             Roles roles = new Roles(arr);
             roles.contains(null);
             fail();
