@@ -1,4 +1,8 @@
 Role.java
  Role
+RoleExpression.java
+ RoleExpression
+RoleTerm.java
+ RoleTerm
 Roles.java
  Roles

@@ -5,16 +5,12 @@ import org.junit.rules.ExpectedException;
 
 
 public class RoleTest extends TestCase {
-    @Rule
-    public ExpectedException thrown= ExpectedException.none();
 
-    @Test
     public void testName() {
         Role role = new Role("name");
         assertEquals(role.name(), "name");
     }
 
-    @Test
     public void testNameNull(){
         try{
             Role role = new Role(null);
@@ -24,7 +20,6 @@ public class RoleTest extends TestCase {
         }
     }
 
-    @Test
     public void testNameEmpty(){
         try{
             Role role = new Role("");
@@ -34,7 +29,6 @@ public class RoleTest extends TestCase {
         }
     }
 
-    @Test
     public void testNameBlank(){
         try{
             Role role = new Role("   ");
@@ -44,7 +38,6 @@ public class RoleTest extends TestCase {
         }
     }
 
-    @Test
     public void testNameSpaced(){
         try{
             Role role = new Role(" name");
@@ -64,5 +57,17 @@ public class RoleTest extends TestCase {
         } catch(IllegalArgumentException exception){
             assertEquals(exception.getMessage(),"Name cannot contain spaces");
         }
+    }
+
+    public void testEquals() {
+        Role role1 = new Role("admin");
+        Role role2 = new Role("admin");
+        assertEquals(role1, role2);
+    }
+
+    public void testHashCode() {
+        Role role1 = new Role("admin");
+        Role role2 = new Role("admin");
+        assertEquals(role1.hashCode(), role2.hashCode());
     }
 }

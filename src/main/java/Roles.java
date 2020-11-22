@@ -15,4 +15,5 @@ public class Roles {
         if (role == null) throw new IllegalArgumentException("Parameter cannot be null");
         return roles.contains(role);
     }
+
 }
