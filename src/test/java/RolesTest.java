@@ -1,7 +1,5 @@
 import junit.framework.TestCase;
 
-import java.util.Arrays;
-
 public class RolesTest extends TestCase {
 
     public void testRoles() {
