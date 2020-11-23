@@ -1,3 +1,6 @@
+import Role.Role;
+import Role.RoleTerm;
+import Role.Roles;
 import junit.framework.TestCase;
 
 public class RoleTermTest extends TestCase {
@@ -7,7 +10,7 @@ public class RoleTermTest extends TestCase {
             RoleTerm term = new RoleTerm(null);
             fail();
         }catch (IllegalArgumentException exception){
-            assertEquals(exception.getMessage(), "Role cannot be null");
+            assertEquals(exception.getMessage(), "Role.Role cannot be null");
         }
     }
 

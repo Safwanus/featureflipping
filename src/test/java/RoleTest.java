@@ -1,3 +1,4 @@
+import Role.Role;
 import junit.framework.TestCase;
 
 

@@ -1,4 +1,5 @@
-import java.util.function.Predicate;
+package RoleExpression;
+import Role.RoleTerm;
 
 public abstract class RoleOperator implements RoleExpression{
     protected RoleTerm leftOperand;

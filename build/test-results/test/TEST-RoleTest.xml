@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="RoleTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2020-11-23T02:00:39" hostname="SAFOUANE" time="0.006">
+<testsuite name="RoleTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2020-11-23T03:40:59" hostname="SAFOUANE" time="0.013">
   <properties/>
   <testcase name="testNameNull" classname="RoleTest" time="0.0"/>
-  <testcase name="testNameSpaced" classname="RoleTest" time="0.0"/>
-  <testcase name="testName" classname="RoleTest" time="0.0"/>
-  <testcase name="testHashCode" classname="RoleTest" time="0.001"/>
-  <testcase name="testEquals" classname="RoleTest" time="0.001"/>
+  <testcase name="testNameSpaced" classname="RoleTest" time="0.001"/>
+  <testcase name="testName" classname="RoleTest" time="0.005"/>
+  <testcase name="testHashCode" classname="RoleTest" time="0.002"/>
+  <testcase name="testEquals" classname="RoleTest" time="0.0"/>
   <testcase name="testNameBlank" classname="RoleTest" time="0.0"/>
   <testcase name="testNameEmpty" classname="RoleTest" time="0.0"/>
-  <testcase name="testNameRegEx" classname="RoleTest" time="0.001"/>
+  <testcase name="testNameRegEx" classname="RoleTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

@@ -1,3 +1,5 @@
+import Role.Role;
+import Role.Roles;
 import junit.framework.TestCase;
 
 public class RolesTest extends TestCase {

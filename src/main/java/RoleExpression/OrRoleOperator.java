@@ -1,3 +1,5 @@
+package RoleExpression;
+import Role.*;
 import java.util.function.Predicate;
 
 public class OrRoleOperator extends RoleOperator{

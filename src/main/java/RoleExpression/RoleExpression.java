@@ -1,3 +1,5 @@
+package RoleExpression;
+import Role.Roles;
 import java.util.function.Predicate;
 
 public interface RoleExpression {
