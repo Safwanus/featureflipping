@@ -3,6 +3,10 @@ import java.util.function.Predicate;
 public class AndRoleOperator extends RoleOperator{
     private String operation = "And";
 
+    public AndRoleOperator(RoleTerm leftOperand, RoleTerm rightOperand) {
+        super(leftOperand, rightOperand);
+    }
+
     @Override
     public Predicate<Roles> toPredicate() {
         Predicate<Roles> leftPredicate = roles -> leftOperand.toPredicate().test(roles);
